@@ -47,23 +47,27 @@ html {
   height: 1.5rem;
 }
 
-.logo p {
+.logo p, .footlogo p {
   padding-left: 1rem;
 }
 
 .menu ul {
   display: flex;
-  padding-right: 2rem;
 }
 
 .menu li {
-  padding: 1rem 0 1rem 2rem;
+  padding: 1rem 2rem 1rem 0rem;
+}
+
+.brief {
+  display: none;
 }
 
 .bannercaption {
   display: flex;
   justify-content: flex-end;
 }
+
 .bannercaption h1 {
   background-color: white;
   padding: 1.5rem 5rem;
@@ -119,6 +123,8 @@ html {
 }
 
 .philosophy, .appointments {
+  display: flex;
+  flex-direction: column;
   width: 35%;
   margin-left: 5%;
 }
@@ -130,7 +136,117 @@ footer {
   margin-top: 5rem;
 }
 
+.footlogo {
+  display: flex;
+  align-items: center;
+}
+
 footer img {
   height: 1.5rem;
   padding: 4rem 0 4rem 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .site, .siteplus72 {
+    width: 100%;
+  }
+
+  .heading {
+    margin-top: 0rem;
+  }
+
+  .banner {
+    height: 22rem;
+  }
+
+  .bannercaption h1 {
+    padding: .75rem 4rem;
+    font-size: 1.33rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+  .brief {
+    display: initial;
+  }
+
+  .full, .heading p {
+    display: none;
+  }
+
+  .about h2 {
+    width: auto;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  .banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .bannercaption h1 {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    margin: 9rem 0rem 0rem 0rem;
+    padding: 1rem;
+  }
+
+  .services {
+    flex-direction: column;
+    margin: 3.77rem;
+  }
+
+  .service {
+    margin: 0rem;
+    font-size: .77rem;
+  }
+
+  .fittings img, .delivery img {
+    margin-top: 1.54rem;
+  }
+
+  .about {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about h2 {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .philosophy, .appointments {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .philosophy p, .appointments p {
+    margin: 1rem 0 4rem .5rem;
+    font-size: .77rem;
+  }
+
+  footer {
+    margin-top: 0rem;
+    justify-content: center;
+  }
+
+  .footlogo p {
+    display: none;
+  }
+
+  footer img {
+    padding-right: 4rem;
+  }
+
 }
