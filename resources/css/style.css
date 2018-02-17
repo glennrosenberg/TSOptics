@@ -4,6 +4,11 @@ html {
   line-height: 1.4;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .site {
   width: 960px;
 }
@@ -26,8 +31,6 @@ html {
 .heading {
   display: flex;
   justify-content: space-between;
-  padding-left: 2rem;
-  padding-right: 2rem;
   color: white;
   background-color: cadetblue;
   font-size: 1rem;
@@ -37,6 +40,7 @@ html {
 .logo {
   display: flex;
   align-items: center;
+  padding-left: 2rem;
 }
 
 .logo img {
@@ -49,6 +53,7 @@ html {
 
 .menu ul {
   display: flex;
+  padding-right: 2rem;
 }
 
 .menu li {
@@ -66,4 +71,66 @@ html {
   font-weight: bold;
   line-height: 1.2;
   margin-top: 10rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services {
+  display: flex;
+  justify-content: space-space-between;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.exams img {
+  width: 3.5rem;
+}
+
+.fittings img, .delivery img {
+  width: 5rem;
+}
+
+.about {
+  display: flex;
+}
+
+.about h2 {
+  width: 10rem;
+  color: white;
+  background-color: cadetblue;
+  font-weight: bold;
+  padding: .5rem 1.25rem;
+}
+
+.about p {
+  margin-top: 1rem;
+}
+
+.philosophy, .appointments {
+  width: 35%;
+  margin-left: 5%;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  background-color: azure;
+  margin-top: 5rem;
+}
+
+footer img {
+  height: 1.5rem;
+  padding: 4rem 0 4rem 4rem;
 }
